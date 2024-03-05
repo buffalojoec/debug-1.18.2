@@ -1,0 +1,18 @@
+[package]
+name = "repro-1-18-2"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+no-entrypoint = []
+test-sbf = []
+
+[dependencies]
+solana-program = "=1.18.2"
+
+[dev-dependencies]
+solana-program-test = "=1.18.2"
+solana-sdk = "=1.18.2"
+
+[lib]
+crate-type = ["cdylib", "lib"]
